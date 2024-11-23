@@ -3,185 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="RektDevelopers: Building Communities, Driving Growth. We specialize in community management, strategic growth, and seamless project integration for developers and startups.">
-  <meta name="keywords" content="RektDevelopers, Community Management, Strategic Growth, Project Integration, Web3, Startups, Developer Support">
+  <meta name="description" content="RektDevelopers: Building communities, driving growth, and delivering innovative solutions for startups and developers.">
+  <meta name="keywords" content="RektDevelopers, Community Management, Growth Strategy, Web3, Project Integration, Developer Tools, Crypto Community">
   <meta name="author" content="RektDevelopers">
-  <meta property="og:title" content="RektDevelopers - Building Communities, Driving Growth">
-  <meta property="og:description" content="Professional community management and development solutions for startups and developers.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="RektDevelopers: Building Communities & Driving Growth">
+  <meta property="og:description" content="RektDevelopers specializes in community management, strategic growth, and Web3 integrations.">
   <meta property="og:image" content="https://github.com/RektDevelopers/.github/blob/24c17cab092c5dd08be647f84f6fdbaa0803232f/banner.jpg">
   <meta property="og:url" content="https://rektdevelopers.github.io">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <title>RektDevelopers | Building Communities, Driving Growth</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Base Styles */
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
-      color: #333;
-      overflow-x: hidden;
-    }
+  <meta name="twitter:title" content="RektDevelopers: Building Communities & Driving Growth">
+  <meta name="twitter:description" content="RektDevelopers specializes in community management, strategic growth, and Web3 integrations.">
+  <meta name="twitter:image" content="https://github.com/RektDevelopers/.github/blob/24c17cab092c5dd08be647f84f6fdbaa0803232f/banner.jpg">
 
-    header {
-      position: relative;
-      height: 100vh;
-      background: url('https://github.com/RektDevelopers/.github/blob/24c17cab092c5dd08be647f84f6fdbaa0803232f/banner.jpg') no-repeat center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+  <!-- SEO Enhancements -->
+  <link rel="canonical" href="https://rektdevelopers.github.io">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
 
-    header .content {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 2rem;
-      border-radius: 10px;
-      animation: fadeIn 2s ease-in-out;
-    }
+  <!-- Title -->
+  <title>RektDevelopers - Building Communities & Driving Growth</title>
 
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-      color: #ff6a00;
-    }
+  <!-- CSS Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
-    header p {
-      font-size: 1.2rem;
-      margin: 1rem 0;
-    }
-
-    header a {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background: #ff6a00;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    header a:hover {
-      background: #e55c00;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Section Styles */
-    section {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-
-    .service {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-
-    .service:hover {
-      transform: translateY(-10px);
-    }
-
-    .service img {
-      max-width: 80px;
-      margin: 1rem auto;
-    }
-
-    .service h3 {
-      font-size: 1.5rem;
-      color: #ff6a00;
-      margin-bottom: 1rem;
-    }
-
-    .service p {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 1rem;
-    }
-
-    /* Footer Styles */
-    footer {
-      background: #333;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    footer a {
-      color: #ff6a00;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <!-- JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web/build/player/lottie.min.js"></script>
 </head>
-<body>
-  <!-- Header Section -->
-  <header>
-    <div class="content">
-      <h1>Welcome to RektDevelopers 👋</h1>
-      <p>Building Communities, Driving Growth 🚀</p>
-      <a href="#services">Explore Services</a>
-    </div>
+<body class="bg-gradient-to-b from-blue-50 to-blue-100 text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="min-h-screen flex flex-col justify-center items-center text-center">
+    <img src="https://github.com/RektDevelopers/.github/blob/24c17cab092c5dd08be647f84f6fdbaa0803232f/banner.jpg" 
+         alt="RektDevelopers Banner" class="w-3/4 max-w-4xl mb-6 animate__animated animate__fadeIn">
+    <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">
+      Welcome to RektDevelopers
+    </h1>
+    <p class="text-lg text-gray-600 mb-8 animate__animated animate__fadeInUp">
+      Building Communities, Driving Growth 🚀
+    </p>
+    <a href="#services" class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition">
+      Explore Our Services
+    </a>
   </header>
 
   <!-- About Section -->
-  <section id="about">
-    <h2>🌟 About Us</h2>
-    <p>RektDevelopers specializes in community management, strategic growth, and seamless project integration. We help developers and startups scale effectively, drive engagement, and achieve measurable results.</p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services">
-    <h2>💼 Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920211.png" alt="Community Management">
-        <h3>Community Management</h3>
-        <p>Building and moderating active communities to foster growth and engagement.</p>
-      </div>
-      <div class="service">
-        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="24/7 Support">
-        <h3>24/7 Support</h3>
-        <p>Always-on assistance to ensure your community thrives around the clock.</p>
-      </div>
-      <div class="service">
-        <img src="https://cdn-icons-png.flaticon.com/512/3011/3011270.png" alt="Growth Strategy">
-        <h3>Growth Strategy</h3>
-        <p>Data-driven strategies to scale your community effectively.</p>
-      </div>
-      <div class="service">
-        <img src="https://cdn-icons-png.flaticon.com/512/3106/3106786.png" alt="Project Integration">
-        <h3>Project Integration</h3>
-        <p>Seamless onboarding of new features and tools for your projects.</p>
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">About Us</h2>
+      <p class="text-gray-600 mb-8">
+        RektDevelopers specializes in community management, strategic growth, and Web3 integrations. We empower startups and developers to achieve their goals through tailored solutions.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 shadow-md rounded-lg bg-gray-50">
+          <h3 class="font-bold text-lg mb-2">Community Management</h3>
+          <p>Professional handling of community interactions and growth strategies.</p>
+        </div>
+        <div class="p-6 shadow-md rounded-lg bg-gray-50">
+          <h3 class="font-bold text-lg mb-2">Strategic Growth</h3>
+          <p>Data-driven approaches to scaling communities and increasing engagement.</p>
+        </div>
+        <div class="p-6 shadow-md rounded-lg bg-gray-50">
+          <h3 class="font-bold text-lg mb-2">Web3 Integrations</h3>
+          <p>Seamless onboarding of blockchain projects and innovative technologies.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>© 2024 RektDevelopers | <a href="https://likhon.dev">likhon.dev</a> | <a href="https://t.me/RektDevelopers">Telegram</a> | <a href="https://twitter.com/RektDevelopers">Twitter</a></p>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8">
+    <div class="container mx-auto text-center">
+      <p>© 2024 RektDevelopers. All Rights Reserved.</p>
+    </div>
   </footer>
+
+  <!-- Particle Animation -->
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles.js loaded!');
+    });
+  </script>
+
 </body>
 </html>
