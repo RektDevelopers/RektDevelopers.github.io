@@ -1,0 +1,41 @@
+# SEO and Metadata Auto-Update Configuration
+update_frequency: 5h  # Updates every 5 hours
+
+og_tags:
+  title: "RektDevelopers: Building Communities & Driving Growth"
+  description: "RektDevelopers specializes in community management, strategic growth, and Web3 integrations."
+  image: "https://github.com/RektDevelopers/.github/blob/24c17cab092c5dd08be647f84f6fdbaa0803232f/banner.jpg"
+  url: "https://rektdevelopers.github.io"
+  type: "website"
+
+meta_tags:
+  - name: "description"
+    content: "RektDevelopers: Building communities, driving growth, and delivering innovative solutions for startups and developers."
+  - name: "keywords"
+    content: "RektDevelopers, Community Management, Growth Strategy, Web3, Project Integration, Developer Tools, Crypto Community"
+  - name: "author"
+    content: "RektDevelopers"
+
+sitemap:
+  enabled: true
+  url: "https://rektdevelopers.github.io/sitemap.xml"
+
+robots:
+  index: true
+  follow: true
+
+analytics:
+  google_analytics_id: "YOUR_GOOGLE_ANALYTICS_ID"
+
+cdn:
+  libraries:
+    - name: "tailwindcss"
+      url: "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    - name: "animate.css"
+      url: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    - name: "three.js"
+      url: "https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"
+    - name: "particles.js"
+      url: "https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
+    - name: "lottie-web"
+      url: "https://cdn.jsdelivr.net/npm/lottie-web/build/player/lottie.min.js"
