@@ -1,96 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="RektDevelopers: Building communities, driving growth, and delivering innovative solutions for startups and developers.">
-  <meta name="keywords" content="RektDevelopers, Community Management, Growth Strategy, Web3, Project Integration, Developer Tools, Crypto Community">
-  <meta name="author" content="RektDevelopers">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>RektDevelopers: Pioneering Web3 Solutions & Community Building</title>
+    <meta name="description" content="RektDevelopers leads in Web3 innovation, offering DApp development, community management, and blockchain integration for next-gen startups and developers.">
+    <meta name="keywords" content="RektDevelopers, Web3, DApp, Blockchain, Smart Contracts, NFT, DeFi, Community Management, Growth Strategy">
+    <meta name="author" content="RektDevelopers">
+    <link rel="canonical" href="https://rektdevelopers.github.io">
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="RektDevelopers: Building Communities & Driving Growth">
-  <meta property="og:description" content="RektDevelopers specializes in community management, strategic growth, and Web3 integrations.">
-  <meta property="og:image" content="https://github.com/RektDevelopers/.github/blob/24c17cab092c5dd08be647f84f6fdbaa0803232f/banner.jpg">
-  <meta property="og:url" content="https://rektdevelopers.github.io">
-  <meta property="og:type" content="website">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rektdevelopers.github.io">
+    <meta property="og:title" content="RektDevelopers: Pioneering Web3 Solutions & Community Building">
+    <meta property="og:description" content="Empowering the decentralized future with cutting-edge Web3 development and thriving community ecosystems.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="RektDevelopers: Building Communities & Driving Growth">
-  <meta name="twitter:description" content="RektDevelopers specializes in community management, strategic growth, and Web3 integrations.">
-  <meta name="twitter:image" content="https://github.com/RektDevelopers/.github/blob/24c17cab092c5dd08be647f84f6fdbaa0803232f/banner.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rektdevelopers.github.io">
+    <meta property="twitter:title" content="RektDevelopers: Pioneering Web3 Solutions & Community Building">
+    <meta property="twitter:description" content="Empowering the decentralized future with cutting-edge Web3 development and thriving community ecosystems.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
 
-  <!-- SEO Enhancements -->
-  <link rel="canonical" href="https://rektdevelopers.github.io">
-  <meta name="robots" content="index, follow">
-  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/placeholder.svg?height=32&width=32">
+    <link rel="icon" type="image/png" sizes="16x16" href="/placeholder.svg?height=16&width=16">
+    <link rel="apple-touch-icon" sizes="180x180" href="/placeholder.svg?height=180&width=180">
 
-  <!-- Title -->
-  <title>RektDevelopers - Building Communities & Driving Growth</title>
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
 
-  <!-- CSS Libraries -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  <!-- JS Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lottie-web/build/player/lottie.min.js"></script>
+    <style>
+        :root {
+            --primary: #00ffff;
+            --secondary: #ff00ff;
+            --accent: #ffff00;
+            --background: #000000;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        .hero-section {
+            background-image: url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--background);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: var(--background);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        .social-icons a {
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: var(--accent);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .glow {
+            box-shadow: 0 0 15px var(--accent);
+        }
+
+        .neon-border {
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 10px var(--primary), inset 0 0 10px var(--primary);
+        }
+    </style>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RektDevelopers",
+      "url": "https://rektdevelopers.github.io",
+      "logo": "https://rektdevelopers.github.io/logo.png",
+      "sameAs": [
+        "https://twitter.com/RektDevelopers",
+        "https://github.com/RektDevelopers",
+        "https://t.me/RektDevelopers"
+      ],
+      "description": "RektDevelopers leads in Web3 innovation, offering DApp development, community management, and blockchain integration for next-gen startups and developers."
+    }
+    </script>
 </head>
-<body class="bg-gradient-to-b from-blue-50 to-blue-100 text-gray-800">
-
-  <!-- Hero Section -->
-  <header class="min-h-screen flex flex-col justify-center items-center text-center">
-    <img src="https://github.com/RektDevelopers/.github/blob/24c17cab092c5dd08be647f84f6fdbaa0803232f/banner.jpg" 
-         alt="RektDevelopers Banner" class="w-3/4 max-w-4xl mb-6 animate__animated animate__fadeIn">
-    <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">
-      Welcome to RektDevelopers
-    </h1>
-    <p class="text-lg text-gray-600 mb-8 animate__animated animate__fadeInUp">
-      Building Communities, Driving Growth 🚀
-    </p>
-    <a href="#services" class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition">
-      Explore Our Services
-    </a>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">About Us</h2>
-      <p class="text-gray-600 mb-8">
-        RektDevelopers specializes in community management, strategic growth, and Web3 integrations. We empower startups and developers to achieve their goals through tailored solutions.
-      </p>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-6 shadow-md rounded-lg bg-gray-50">
-          <h3 class="font-bold text-lg mb-2">Community Management</h3>
-          <p>Professional handling of community interactions and growth strategies.</p>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-3xl font-bold text-gradient">
+                    RektDevelopers
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#services" class="hover:text-primary transition-colors">Services</a>
+                    <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-white hover:text-primary transition-colors">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
         </div>
-        <div class="p-6 shadow-md rounded-lg bg-gray-50">
-          <h3 class="font-bold text-lg mb-2">Strategic Growth</h3>
-          <p>Data-driven approaches to scaling communities and increasing engagement.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-screen flex items-center justify-center">
+        <div class="bg-black bg-opacity-70 w-full h-full absolute"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 animate__animated animate__fadeInDown">
+                Pioneering <span class="text-gradient">Web3</span> Innovation
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 animate__animated animate__fadeInUp">Empowering the Decentralized Future with Cutting-Edge Solutions 🚀</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#services" class="btn-primary px-8 py-3 font-semibold rounded-full animate__animated animate__fadeInUp">
+                    Explore Our Services
+                </a>
+                <a href="#contact" class="btn-secondary px-8 py-3 font-semibold rounded-full animate__animated animate__fadeInUp">
+                    Start Your Web3 Journey
+                </a>
+            </div>
         </div>
-        <div class="p-6 shadow-md rounded-lg bg-gray-50">
-          <h3 class="font-bold text-lg mb-2">Web3 Integrations</h3>
-          <p>Seamless onboarding of blockchain projects and innovative technologies.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Redefining Web3</h2>
+                    <p class="text-gray-300 mb-6">At RektDevelopers, we're not just building for the present; we're architecting the future of the decentralized web. Our team of visionary blockchain developers, community strategists, and Web3 enthusiasts is committed to pushing the boundaries of what's possible in the decentralized space.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-gray-800 p-4 rounded-lg text-center neon-border">
+                            <h3 class="text-2xl font-bold text-primary">200+</h3>
+                            <p class="text-gray-400">DApps Launched</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg text-center neon-border">
+                            <h3 class="text-2xl font-bold text-primary">2M+</h3>
+                            <p class="text-gray-400">Community Members</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 floating">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Web3 Collaboration" class="rounded-lg shadow-2xl neon-border" loading="lazy">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-300 py-8">
-    <div class="container mx-auto text-center">
-      <p>© 2024 RektDevelopers. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient">Our Web3 Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card p-8 rounded-xl">
+                    <i class="fas fa-code text-4xl text-primary mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Smart Contract Development</h3>
+                    <p class="text-gray-300">Crafting secure, efficient, and innovative smart contracts for DeFi, NFTs, and DAOs.</p>
+                </div>
+                <div class="service-card p-8 rounded-xl">
+                    <i class="fas fa-users text-4xl text-primary mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Community Building</h3>
+                    <p class="text-gray-300">Fostering engaged and vibrant Web3 communities with data-driven growth strategies.</p>
+                </div>
+                <div class="service-card p-8 rounded-xl">
+                    <i class="fas fa-layer-group text-4xl text-primary mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">DApp Architecture</h3>
+                    <p class="text-gray-300">Designing scalable and user-centric decentralized applications for the future of Web3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Particle Animation -->
-  <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('Particles.js loaded!');
-    });
-  </script>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient">Pioneering Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-black p-6 rounded-xl neon-border">
+                    <h3 class="text-2xl font-bold mb-4 text-primary">DecentralSwap Pro</h3>
+                
+<p class="text-gray-300 mb-4">A next-gen decentralized exchange with advanced trading features, cross-chain swaps, and AI-driven market insights.</p>
+                    <a href="#" class="text-secondary hover:underline">Explore Project</a>
+                </div>
+                <div class="bg-black p-6 rounded-xl neon-border">
+                    <h3 class="text-2xl font-bold mb-4 text-primary">MetaVerse Nexus</h3>
+                    <p class="text-gray-300 mb-4">An interconnected metaverse platform enabling seamless experiences across virtual worlds, powered by blockchain technology.</p>
+                    <a href="#" class="text-secondary hover:underline">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Stats Section -->
+    <section id="stats" class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h3 class="text-4xl font-bold mb-2 text-black">200+</h3>
+                    <p class="text-gray-800">DApps Launched</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold mb-2 text-black">2M+</h3>
+                    <p class="text-gray-800">Community Members</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold mb-2 text-black">50+</h3>
+                    <p class="text-gray-800">Blockchain Experts</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold mb-2 text-black">24/7</h3>
+                    <p class="text-gray-800">Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-gradient">Ignite Your Web3 Vision</h2>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Name" class="w-full p-3 bg-gray-800 rounded-lg focus:ring-2 focus:ring-primary text-white">
+                        <input type="email" placeholder="Email" class="w-full p-3 bg-gray-800 rounded-lg focus:ring-2 focus:ring-primary text-white">
+                    </div>
+                    <textarea rows="5" placeholder="Describe your revolutionary idea" class="w-full p-3 bg-gray-800 rounded-lg focus:ring-2 focus:ring-primary text-white"></textarea>
+                    <button type="submit" class="btn-primary px-8 py-3 font-semibold rounded-full transition-colors">
+                        Launch Your Project
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gradient">RektDevelopers</h3>
+                    <p class="text-gray-400">Pioneering the decentralized future through innovation, community, and relentless pursuit of excellence.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Connect With Us</h3>
+                    <div class="social-icons flex space-x-4">
+                        <a href="https://likhon.dev" target="_blank" rel="noopener noreferrer" aria-label="Website"><i class="fas fa-globe text-2xl"></i></a>
+                        <a href="https://t.me/RektDevelopers" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram text-2xl"></i></a>
+                        <a href="https://twitter.com/RektDevelopers" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="https://github.com/RektDevelopers" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 RektDevelopers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script>
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from('.service-card', {
+            scrollTrigger: {
+                trigger: '#services',
+                start: 'top center'
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2
+        });
+
+        gsap.from('#stats .grid > div', {
+            scrollTrigger: {
+                trigger: '#stats',
+                start: 'top center'
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2
+        });
+
+        gsap.from('#projects .grid > div', {
+            scrollTrigger: {
+                trigger: '#projects',
+                start: 'top center'
+            },
+            x: -50,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Glow effect on hover for buttons
+        const buttons = document.querySelectorAll('.btn-primary, .btn-secondary');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.classList.add('glow');
+            });
+            button.addEventListener('mouseleave', () => {
+                button.classList.remove('glow');
+            });
+        });
+    </script>
 </body>
 </html>
+
